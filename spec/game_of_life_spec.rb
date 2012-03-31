@@ -1,5 +1,4 @@
-require 'rspec'
-require File.expand_path('../gol', __FILE__)
+require 'spec_helper'
 
 describe Game do
   subject { Game.new(5,5) }

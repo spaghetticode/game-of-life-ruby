@@ -8,7 +8,7 @@ def play(iterations)
   # glider:
   game.load [2,1], [2,2], [2,3], [1,3], [0,2]
   n = 0
-  while n < iterations
+  while n <= iterations
     print "\e[2J\e[f"
     puts game.to_s.gsub('0', ' ').gsub('1', '@')
     game.tick
